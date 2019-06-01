@@ -1,4 +1,4 @@
-'use strict';
+'use strict'; 
 const Discord = require("discord.js");//on appele le fichier discord.js pour que le bot fonctionne
 const client = new Discord.Client();
 const token = "Votre clé Token ici";//token de votre bot
