@@ -231,7 +231,7 @@ message.reply("Idk pourquoi c'est cassé tbh :(");
 /////////////////////////////création du channel admin(log)//////////////////////////////////////
 if(message.author.bot) return;
 if(!message.guild) return;
-let chaine = message.guild.channels.find('name', 'admin-lagos');
+let chaine = message.guild.channels.find('name', 'admin-logs');
 if(chaine) chaine.send(" ```\nAuteur: \n"+message.author.username+"\nMessage :\n"+mscg+"```");
 ////////////////////////////////////////////////////////////////////////////////////////////////
 });
