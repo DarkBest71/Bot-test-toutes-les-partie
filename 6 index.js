@@ -206,7 +206,6 @@ message.guild.channels.find("name", "🔅météo🔅").sendEmbed(embed)
 }
 ////////////////////////////////////////////////////////////////////////FIN///////////////////////////////////////////////////////////////////////////
 
-
 //////////////////////////////////////////////////////////////////////Météo anciéne version/////////////////////////////////////////////////
 if (message.content.startsWith("!meteo")){
 var location = message.content.substr(6);
@@ -227,6 +226,9 @@ console.log(Date.now(), "ERREUR", "Weather.JS a rencontré une erreur");
 message.reply("Idk pourquoi c'est cassé tbh :(");
 }
 }///////////////////////////////////////////////////////////////////////////////////////FIN///////////////////////////////////////////////
+
+
+
 
 ///////////////////Creation du channel admin-logs////////////////////////////////////////////////////
 if(message.author.bot) return;
@@ -255,7 +257,7 @@ if (!message.guild.me.hasPermission('MANAGE_CHANNELS') && !logs) {
 console.log('Le salon logs n\'existe pas et j\'ai essayer de le créer mais je n\'ai pas les permissions !')
 }  
 //Les mots interdits :   
-let blacklisted = ['connard', 'pute', 'putain', 'ta gueule', ];
+let blacklisted = ['fdp', 'ntm', 'connard', 'pute', 'putain', 'ta gueule', 'nique', 'salope', 'PD', 'batard', 'putin', 'enfoiré', 'connare', 'fils de pute', 'bâtard', 'bicot', 'conasse', 'couille molle', 'débile', 'ducon', 'dugland', 'enculé', 'fachiste', 'imbécile', 'lavette', ];
 //Il va chercher les mots
 let foundInText = false;
 for (var i in blacklisted) {
@@ -286,7 +288,7 @@ console.log(`J'ai recu un message : \n${content}`)
 
 client.on("ready", () => {
 console.log("prêt à travailler sur le serveur Dark-Best!");
-client.channels.get("577083824240852996").send("Je suis connecté est prêt à travailler !");
+client.channels.get("577083824240852996").send("Je suis connecté est prêt à travailler !"); //Bien mettre l'id du channel pour annoncer que le bot et connecté
 
 });
 
